@@ -1,0 +1,497 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+                    <div class="text text-center">
+                        <span class="subheading">Hey! I am</span>
+                        <h1>Denys Puliaiev</h1>
+                        <h2>I'm a
+                            <span
+                                    class="txt-rotate"
+                                    data-period="2000"
+                                    data-rotate='[ "Python Developer."]'></span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="mouse">
+            <a href="#" class="mouse-icon">
+                <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+            </a>
+        </div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-6 col-lg-6 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="img d-flex align-self-stretch align-items-center"
+                             style="background-image:url('{% static 'main/images/about.png' %}');">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 pl-md-5 py-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h1 class="big">About</h1>
+                            <h2 class="mb-4">About Me</h2>
+                            <p>Self-motivated and results-oriented Python Developer with hands-on experience in Machine
+                                Learning and back-end development. Proficient in Python, with expertise in developing
+                                efficient algorithms, building predictive models, and implementing data-driven solutions
+                                using ML frameworks. Skilled in working with databases such as PostgreSQL and MongoDB,
+                                as well as frameworks like FastAPI and Django. </p>
+                            <ul class="about-info mt-4 px-md-0 px-2">
+                                {#		            	<li class="d-flex"><span>Name:</span> <span>Denys Puliaiev</span></li>#}
+                                {#		            	<li class="d-flex"><span>Date of birth:</span> <span>July 24, 1984</span></li>#}
+                                {#		            	<li class="d-flex"><span>Address:</span> <span>San Francisco CA 97987 USA</span></li>#}
+                                {#		            	<li class="d-flex"><span>Zip code:</span> <span>1000</span></li>#}
+                                {#		            	<li class="d-flex"><span>Email:</span> <span>ronaldo@gmail.com</span></li>#}
+                                {#		            	<li class="d-flex"><span>Phone: </span> <span>+1-2234-5678-9-0</span></li>#}
+                            </ul>
+                        </div>
+                    </div>
+                    {#	          <div class="counter-wrap ftco-animate d-flex mt-md-3">#}
+                    {#              <div class="text">#}
+                    {#              	<p class="mb-4">#}
+                    {#	                <span class="number" data-number="120">0</span>#}
+                    {#	                <span>Project complete</span>#}
+                    </p>
+                    <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-partner">
+        <div class="container">
+            <div class="row">
+                {#    			<div class="col-sm ftco-animate">#}
+                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-1.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
+                {#    			</div>#}
+                {#    			<div class="col-sm ftco-animate">#}
+                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-2.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
+                {#    			</div>#}
+                {#    			<div class="col-sm ftco-animate">#}
+                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-3.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
+                {#    			</div>#}
+                {#    			<div class="col-sm ftco-animate">#}
+                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-4.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
+                {#    			</div>#}
+                {#    			<div class="col-sm ftco-animate">#}
+                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-5.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
+            </div>
+        </div>
+
+    </section>
+
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav id="navi">
+                        <ul>
+                            <li><a href="#page-1">Education</a></li>
+                            <li><a href="#page-2">Work Experience</a></li>
+                            <li><a href="#page-3">Tech Skills</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <!-- Education -->
+                <div class="col-md-9">
+                    <div id="page-1" class="page one">
+                        <h2 class="heading">Education</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="flaticon-ideas"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <span class="date">2023-2024</span>
+                                <h2>Python Developer</h2>
+                                <span class="position">IT School GoIT</span>
+                                <p>Received intensive training in Python development. Mastered skills in building web applications using Django and FastAPI, containerization with Docker, creating and learning to implement machine learning models</p>
+                            </div>
+                        </div>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="flaticon-ideas"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <span class="date">2007-2011</span>
+                                <h2>Doctor of Philosophy - PhD</h2>
+                                <span class="position">National University of Pharmacy</span>
+                                <p>Scientific research and thesis defense helped me develop analytical thinking and management skills, which I successfully apply in IT projects</p>
+                            </div>
+                        </div>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="flaticon-ideas"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <span class="date">2001-2006</span>
+                                <h2>Engineer, Industrial technology of drugs</h2>
+                                <span class="position">National University of Pharmacy</span>
+                                <p>An education in engineering helped build a technical background and systems thinking, which was a great foundation for a job in IT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div id="page-2" class="page two">
+                        <h2 class="heading">Experience</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="flaticon-ideas"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <span class="date">2015 - Present</span>
+                                <h2>Associate Professor</h2>
+                                <span class="position">National University of Pharmacy</span>
+                                <p>The teaching experience contributed to the development of communication, 
+                                    project management and data skills, which I now actively apply in 
+                                    the development of IT solutions</p>
+                            </div>
+                        </div>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="flaticon-ideas"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <span class="date">2018-2022</span>
+                                <h2>Head of Information Technology Department</h2>
+                                <span class="position">National University of Pharmacy</span>
+                                <p> Implementing digital solutions, managing IT 
+                                    projects and developing training courses helped build the 
+                                    foundation for the transition into the IT industry</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Skills -->
+                    <div id="page-3" class="page three">
+                        <h2 class="heading">Tech Skills</h2>
+
+                        <div class="row">
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                 <img src="{% static 'main/images/Python.png' %}"  alt="Python Logo" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">Python</h3>
+                                        <p>Writing server-side applications, developing machine learning solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                 <img src="{% static 'main/images/django.png' %}"  alt="Django Logo" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">Django</h3>
+                                        <p>Building scalable web applications </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/FastAPI.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">FastAPI</h3>
+                                        <p>REST API development</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/PostgreSQL.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">PostgreSQL</h3>
+                                        <p>Experience with relational databases</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                               <img src="{% static 'main/images/MongoDB.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">MongoDB</h3>
+                                        <p>Working with NoSQL</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <i class="fas fa-cogs text-secondary"></i>
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">ORM, ODM</h3>
+                                        <p>Working efficiently with databases via ORM (Django) and ODM (MongoDB)</p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/Docker.png' %}"  alt="" style="width: 150px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">Docker</h3>
+                                        <p>Creating and deploying containerized applications</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/HTML.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">HTML</h3>
+                                        <p> Creating modern web interfaces</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/css-logo.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">CSS</h3>
+                                        <p>Working with adaptive and cross-browser interfaces </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/aiohttp.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">Aiohttp</h3>
+                                        <p>Developing asynchronous applications</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/Numpy.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">NumPy</h3>
+                                        <p>Optimizing computations and working with data arrays </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/Pandas.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">Pandas</h3>
+                                        <p>Analyze and process data using </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/TensorFlow.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">TensorFlow</h3>
+                                        <p>Model Creation and Training </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/Scikit_learn.png' %}"  alt="" style="width: 200px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">Scikit-learn</h3>
+                                        <p>Machine Learning </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center d-flex">
+                                <a href="#" class="services-1 shadow">
+                            <span class="icon">
+                                <img src="{% static 'main/images/git.png' %}"  alt="" style="width: 100px; height: 100px;">
+                            </span>
+                                    <div class="desc">
+                                        <h3 class="mb-5">Git</h3>
+                                        <p>Efficient code version control </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+              <!-- Projects -->
+    <section class="ftco-section ftco-project" id="projects-section">
+        <div class="container-fluid px-md-0">
+            <div class="row no-gutters justify-content-center pb-5">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Projects</h1>
+                    <h2 class="mb-4">Projects</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-6 offset-md-3 mb-4">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
+                         style="background-image: url('{% static 'main/images/work-1.png' %}');">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                            <h3><a href="https://classifyme.onrender.com/">A full-stack web service specifically designed to classify images using advanced convolutional neural network</a></h3>
+                            <span> Bootstrap, Django, Machine Learning, Docker, Cloudinary</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-3 mb-4">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
+                         style="background-image: url('{% static 'main/images/work-2.png' %}');">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                            <h3><a href="#">Web application with authentication that allows you to store contacts, add notes, process files, get information about weather and latest news</a></h3>
+                            <span>Bootstrap, Django, PostgreSQl, BeautifulSoup, Docker, Cloudinary</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-3 mb-4">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
+                         style="background-image: url('{% static 'main/images/work-3.png' %}');">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                            <h3><a href="#">API with authentication using FastAPI infrastructure and SQLAlchemy ORM to manage PostgreSQL database with Pydantic data validation module</a></h3>
+                            <span>FastAPI, SQLAlchemy, PostgreSQl, Pydantic</span>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Contact</h1>
+                    <h2 class="mb-4">Contact Me</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia</p>
+                </div>
+            </div>
+
+            <!-- Контактная информация -->
+            <div class="row d-flex contact-info mb-5 justify-content-center">
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box text-center p-4 shadow">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-linkedin"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/denys-puliaiev/">Denys Puliaiev</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box text-center p-4 shadow">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-phone2"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Telegram</h3>
+                            <p><a href="https://t.me/Denys_Puliaiev">Denys_Puliaiev</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box text-center p-4 shadow">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Email Address</h3>
+                            <p><a href="mailto:d.s.puliaiev@gmail.com">d.s.puliaiev@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box text-center p-4 shadow">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-github"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">GitHub</h3>
+                            <p><a href="https://github.com/dspuliaiev?tab=repositories">dspuliaiev</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Форма обратной связи и изображение -->
+                <div class="row no-gutters block-9 justify-content-center">
+                    <div class="col-md-6 d-flex">
+                        <div class="img" style="background-image: url('{% static 'main/images/about.png' %}');"></div>
+                    </div>
+                    <div class="col-md-6 order-md-last d-flex">
+                        <form method="post" class="bg-light p-4 p-md-5 contact-form">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <div class="form-group">
+                                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                {% if messages %}
+                    <div class="alert alert-success">
+                        {% for message in messages %}
+                            <p>{{ message }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
