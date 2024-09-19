@@ -47,4 +47,4 @@ COPY --from=builder /usr/local /usr/local
 COPY . /app/
 
 # Команда для запуска Django с использованием Gunicorn
-CMD ["gunicorn", "--workers", "2", "--timeout", "120", "image_web_classifier.wsgi:application", "--bind", "0.0.0.0:8080"]
+CMD ["gunicorn", "--workers", "2", "--timeout", "120", "My_portfolio.wsgi:application", "--bind", "0.0.0.0:8080"]
