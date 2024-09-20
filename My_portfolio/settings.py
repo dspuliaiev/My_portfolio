@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['vercel.app', '127.0.0.1', ".vercel.app", ".railway.app", 'denys-puliaiev-portfolio.koyeb.app', '.koyeb.app']
 CSRF_TRUSTED_ORIGINS = [ 'http://127.0.0.1', 'https://.vercel.app', 'https://.railway.app', 'https://denys-puliaiev-portfolio.koyeb.app', 'https://.koyeb.app']
@@ -130,3 +130,25 @@ EMAIL_USE_SSL = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
+
+
+LOGGING = {
+     'version': 1,
+     'disable_existing_loggers': False,
+     'handlers': {
+         'console': {
+             'class': 'logging.StreamHandler',
+         },
+     },
+     'root': {
+         'handlers': ['console'],
+         'level': 'DEBUG',
+     },
+     'loggers': {
+         'django': {
+             'handlers': ['console'],
+             'level': 'DEBUG',
+             'propagate': True,
+         },
+     },
+ }
