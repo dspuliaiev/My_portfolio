@@ -361,49 +361,49 @@
 
 
              <!-- Projects -->
-    <section class="ftco-section ftco-project" id="projects-section">
-        <div class="container-fluid px-md-0">
-            <div class="row no-gutters justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h1 class="big big-2">Projects</h1>
-                    <h2 class="mb-4">Projects</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        <section class="ftco-section ftco-project" id="projects-section">
+            <div class="container-fluid px-md-0">
+                <div class="row no-gutters justify-content-center pb-5">
+                    <div class="col-md-12 heading-section text-center ftco-animate">
+                        <h1 class="big big-2">Projects</h1>
+                        <h2 class="mb-4">Projects</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-6 offset-md-3 mb-4">
+                        <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
+                             style="background-image: url('{% static 'main/images/work-1.png' %}');">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="https://classifyme.onrender.com/">A full-stack web service specifically designed to classify images using advanced convolutional neural network</a></h3>
+                                <span>Bootstrap, Django, Machine Learning, Docker, Cloudinary</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-3 mb-4">
+                        <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
+                             style="background-image: url('{% static 'main/images/work-2.png' %}');">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Web application with authentication that allows you to store contacts, add notes, process files, get information about weather and latest news</a></h3>
+                                <span>Bootstrap, Django, PostgreSQl, BeautifulSoup, Docker, Cloudinary</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-3 mb-4">
+                        <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
+                             style="background-image: url('{% static 'main/images/work-3.png' %}'); background-color: blue;">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#" style="color: white;">API with authentication using FastAPI infrastructure and SQLAlchemy ORM to manage PostgreSQL database with Pydantic data validation module</a></h3>
+                                <span style="color: white;">FastAPI, SQLAlchemy, PostgreSQl, Pydantic</span>
+                            </div>
+                        </div>
+                    </div>      
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-md-6 offset-md-3 mb-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
-                         style="background-image: url('{% static 'main/images/work-1.png' %}');">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="https://classifyme.onrender.com/">A full-stack web service specifically designed to classify images using advanced convolutional neural network</a></h3>
-                            <span>Bootstrap, Django, Machine Learning, Docker, Cloudinary</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 offset-md-3 mb-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
-                         style="background-image: url('{% static 'main/images/work-2.png' %}');">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="#">Web application with authentication that allows you to store contacts, add notes, process files, get information about weather and latest news</a></h3>
-                            <span>Bootstrap, Django, PostgreSQl, BeautifulSoup, Docker, Cloudinary</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 offset-md-3 mb-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
-                         style="background-image: url('{% static 'main/images/work-3.png' %}'); background-color: blue;">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="#" style="color: white;">API with authentication using FastAPI infrastructure and SQLAlchemy ORM to manage PostgreSQL database with Pydantic data validation module</a></h3>
-                            <span style="color: white;">FastAPI, SQLAlchemy, PostgreSQl, Pydantic</span>
-                        </div>
-                    </div>
-                </div>      
-            </div>
-        </div>
-    </section>
+        </section>
 
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
