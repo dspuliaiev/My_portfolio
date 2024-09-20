@@ -367,7 +367,9 @@
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Projects</h1>
                     <h2 class="mb-4">Projects</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    <p>In my projects, I leverage a diverse tech stack to deliver robust and scalable solutions. 
+                        My expertise spans from backend development with Python, Django, 
+                        and FastAPI to machine learning with TensorFlow and Scikit-learn</p>
                 </div>
             </div>
             <div class="row no-gutters">
@@ -386,7 +388,7 @@
                          style="background-image: url('{% static 'main/images/work-2.png' %}');">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="#">Web application with authentication that allows you to store contacts, add notes, process files, get information about weather and latest news</a></h3>
+                            <h3><a href="#">Web app with authentication for managing contacts, notes, processing files, retrieving weather and news</a></h3>
                             <span>Bootstrap, Django, PostgreSQl, BeautifulSoup, Docker, Cloudinary</span>
                         </div>
                     </div>
@@ -412,8 +414,7 @@
                 <div class="col-md-7 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Contact</h1>
                     <h2 class="mb-4">Contact Me</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                        Consonantia</p>
+                    <p>I'm eager to contribute my skills and expertise. Reach out to discuss potential collaborations</p>
                 </div>
             </div>
 
@@ -466,7 +467,17 @@
                 </div>
             </div>
 
-
+                    <!-- Блок для отображения сообщений -->
+                {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+        
             <!-- Форма обратной связи и изображение -->
                 <div class="row no-gutters block-9 justify-content-center">
                     <div class="col-md-6 d-flex">
@@ -481,15 +492,8 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div>      
                 
-                {% if messages %}
-                    <div class="alert alert-success">
-                        {% for message in messages %}
-                            <p>{{ message }}</p>
-                        {% endfor %}
-                    </div>
-                {% endif %}
             </div>
         </div>
     </section>

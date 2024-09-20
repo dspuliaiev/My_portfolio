@@ -23,8 +23,8 @@ class IndexView(TemplateView):
             send_mail(
                 subject=f"Contact Form: {subject}",
                 message=f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}",
-                from_email=email,
-                recipient_list=['d.s.puliaiev@gmail.com'],  # Замените на ваш email
+                from_email='d.s.puliaiev@meta.ua',  # Адреса відправника
+                recipient_list=['d.s.puliaiev@gmail.com'],  # Замініть на ваш email
                 fail_silently=False,
             )
 

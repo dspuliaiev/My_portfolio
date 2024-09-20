@@ -122,11 +122,11 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.meta.ua'
-EMAIL_PORT = 465
+
+EMAIL_HOST='smtp.meta.ua'
+EMAIL_PORT=465
 EMAIL_USE_SSL = True
-EMAIL_HOST_USER = 'd.s.puliaiev@meta.ua'
-EMAIL_HOST_PASSWORD = 'D@nger19591961'  # Замініть на ваш пароль
-DEFAULT_FROM_EMAIL = 'd.s.puliaiev@meta.ua'  # Адреса відправника
+EMAIL_HOST_USER='d.s.puliaiev@meta.ua'
+EMAIL_HOST_PASSWORD='D@nger19591961'
+DEFAULT_FROM_EMAIL = 'd.s.puliaiev@meta.ua'
