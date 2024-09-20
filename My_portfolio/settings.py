@@ -18,8 +18,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vercel.app', '127.0.0.1', ".vercel.app", ".railway.app", '*.koyeb.app']
-CSRF_TRUSTED_ORIGINS = [ 'http://127.0.0.1', 'https://.vercel.app', 'https://.railway.app', 'https://*.koyeb.app']
+ALLOWED_HOSTS = ['vercel.app', '127.0.0.1', ".vercel.app", ".railway.app", 'denys-puliaiev-portfolio.koyeb.app']
+CSRF_TRUSTED_ORIGINS = [ 'http://127.0.0.1', 'https://.vercel.app', 'https://.railway.app', 'https://denys-puliaiev-portfolio.koyeb.app']
 
 # Application definition
 
