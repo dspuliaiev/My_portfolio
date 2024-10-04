@@ -23,7 +23,7 @@ RUN pip install --upgrade pip --no-cache-dir && pip install -r requirements.txt
 COPY . /app/
 
 # Собираем статические файлы
-RUN python manage.py collectstatic --noinput
+RUN python
 
 # Stage 2: Final
 FROM python:3.11-slim

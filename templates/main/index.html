@@ -358,22 +358,22 @@
         </div>
     </section>
 
-
-
-             <!-- Projects -->
+           
+    <!-- Projects -->
     <section class="ftco-section ftco-project" id="projects-section">
         <div class="container-fluid px-md-0">
             <div class="row no-gutters justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
+                <div class="col-md-8 heading-section text-center ftco-animate"> <!-- col-md-8 вместо col-md-12 -->
                     <h1 class="big big-2">Projects</h1>
                     <h2 class="mb-4">Projects</h2>
-                    <p>In my projects, I leverage a diverse tech stack to deliver robust and scalable solutions. 
-                        My expertise spans from backend development with Python, Django, 
-                        and FastAPI to machine learning with TensorFlow and Scikit-learn</p>
+                    <p>In my projects, I leverage a diverse tech stack to deliver robust and scalable solutions.
+                        My expertise spans from backend development with Python, Django,
+                        and FastAPI to machine learning with TensorFlow and Scikit-learn.</p>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-md-6 offset-md-3 mb-4">
+            <div class="row no-gutters justify-content-center">
+            <!-- Первая карточка проекта -->
+                <div class="col-md-8 mb-4"> <!-- col-md-8 для контроля ширины -->
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
                          style="background-image: url('{% static 'main/images/work-1.png' %}');">
                         <div class="overlay"></div>
@@ -384,7 +384,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 offset-md-3 mb-4">
+                <!-- Вторая карточка проекта -->
+                <div class="col-md-8 mb-4">
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
                          style="background-image: url('{% static 'main/images/work-2.png' %}');">
                         <div class="overlay"></div>
@@ -394,7 +395,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 offset-md-3 mb-4">
+                <!-- Третья карточка проекта -->
+                <div class="col-md-8 mb-4">
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
                          style="background-image: url('{% static 'main/images/work-3.png' %}'); background-color: blue;">
                         <div class="overlay"></div>
@@ -407,6 +409,8 @@
             </div>
         </div>
     </section>
+
+
 
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
