@@ -9753,66 +9753,133 @@ textarea.form-control {
   color: #6c757d;
 }
 
-/* Стили для каждого проекта */
+/* Стили для карточки проекта */
 .project {
   position: relative;
-  height: 600px; /* Высота проекта */
-  width: 90%; /* Увеличиваем ширину до 90% */
-  margin: 0 auto; /* Центровка карточки */
+  height: 800px; /* Базовая высота карточки */
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
-  border-radius: 10px; /* Скругление углов */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для карточки */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Стили для оверлея */
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Изначально оверлей и текст скрыты */
+.project .overlay, .project .text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Отключаем возможность взаимодействия, пока не видно */
+}
+
+/* При клике добавляется класс "visible" и элементы становятся видимыми */
+.project.visible .overlay, .project.visible .text {
+  opacity: 1;
+  pointer-events: auto; /* Включаем возможность взаимодействия */
+}
+
+/* Оверлей */
 .project .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(62, 100, 255, 0.3); /* Прозрачный синий фон для оверлея */
-  opacity: 1; /* Оверлей всегда виден */
-  transition: opacity 0.3s ease; /* Анимация прозрачности */
+  background-color: rgba(62, 100, 255, 1); /* оверлей */
 }
 
-/* Стили для текста */
+/* Текст внутри проекта */
 .project .text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; /* Цвет текста */
+  color: white;
   width: 80%;
-  opacity: 1; /* Текст всегда виден */
 }
 
-/* Стили для заголовков */
 .project h3 {
   font-size: 22px;
   margin-bottom: 10px;
 }
 
 .project h3 a {
-  color: white; /* Цвет ссылки */
+  color: white;
   text-decoration: none;
 }
 
 .project h3 a:hover {
-  text-decoration: underline; /* Подчеркивание ссылки при наведении */
+  text-decoration: underline;
 }
 
 .project span {
   font-size: 15px;
-  color: #f8f9fa; /* Цвет текста подписи */
+  color: #f8f9fa;
 }
 
-/* Стили для тени */
-.shadow {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+/* Медиазапросы для адаптивности */
+
+/* Средние экраны (планшеты, небольшие ноутбуки) */
+@media (max-width: 1200px) {
+  .project {
+    height: 500px;
+  }
 }
+
+/* Планшеты и устройства с маленькими экранами */
+@media (max-width: 768px) {
+  .project {
+    height: 400px;
+  }
+
+  /* При наведении или клике на планшетах и мобильных устройствах */
+  .project:hover .overlay, .project.visible .overlay {
+    background-color: rgba(62, 100, 255, 1); /* Полностью непрозрачный оверлей */
+  }
+
+  .project:hover .text, .project.visible .text {
+    opacity: 1;
+    pointer-events: auto; /* Включаем возможность взаимодействия */
+  }
+}
+
+/* Мобильные устройства (меньше 576px шириной) */
+@media (max-width: 576px) {
+  .project {
+    height: 300px;
+  }
+
+  .project .text {
+    font-size: 14px;
+  }
+
+  .project h3 {
+    font-size: 18px;
+  }
+
+  .project span {
+    font-size: 12px;
+  }
+
+  /* При наведении или клике на мобильных устройствах */
+  .project:hover .overlay, .project.visible .overlay {
+    background-color: rgba(62, 100, 255, 1); /* Полностью непрозрачный оверлей */
+  }
+
+  .project:hover .text, .project.visible .text {
+    opacity: 1;
+    pointer-events: auto; /* Включаем возможность взаимодействия */
+  }
+}
+
 
 
 

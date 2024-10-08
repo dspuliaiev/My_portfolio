@@ -363,7 +363,7 @@
     <section class="ftco-section ftco-project" id="projects-section">
         <div class="container-fluid px-md-0">
             <div class="row no-gutters justify-content-center pb-5">
-                <div class="col-md-8 heading-section text-center ftco-animate"> <!-- col-md-8 вместо col-md-12 -->
+                <div class="col-md-10 heading-section text-center ftco-animate"> 
                     <h1 class="big big-2">Projects</h1>
                     <h2 class="mb-4">Projects</h2>
                     <p>In my projects, I leverage a diverse tech stack to deliver robust and scalable solutions.
@@ -373,19 +373,19 @@
             </div>
             <div class="row no-gutters justify-content-center">
             <!-- Первая карточка проекта -->
-                <div class="col-md-8 mb-4"> <!-- col-md-8 для контроля ширины -->
+                <div class="col-md-10 mb-4"> 
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
                          style="background-image: url('{% static 'main/images/work-1.png' %}');">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
                             <h3><a href="https://classifyme.onrender.com/">A full-stack web service specifically designed to classify images using advanced convolutional neural network</a></h3>
                             <span>Bootstrap, Django, Machine Learning, Docker, Cloudinary</span>
-                            <span>Warning: The service may take longer to start up as it is currently in a sleeping state on Render.</span>
+                            <div class="warning">Warning: The service may take longer to start up as it is currently in a sleeping state on Render.</div>                    
                         </div>
                     </div>
                 </div>
                 <!-- Вторая карточка проекта -->
-                <div class="col-md-8 mb-4">
+                <div class="col-md-10 mb-4">
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
                          style="background-image: url('{% static 'main/images/work-2.png' %}');">
                         <div class="overlay"></div>
@@ -396,12 +396,12 @@
                     </div>
                 </div>
                 <!-- Третья карточка проекта -->
-                <div class="col-md-8 mb-4">
+                <div class="col-md-10 mb-4">
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
                          style="background-image: url('{% static 'main/images/work-3.png' %}'); background-color: blue;">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="https://pds-fastapi.koyeb.app/docs" style="color: white;">API with authentication using FastAPI infrastructure and SQLAlchemy ORM to manage PostgreSQL database with Pydantic data validation module</a></h3>
+                            <h3><a href="https://fastapi-rest.koyeb.app/docs" style="color: white;">API with authentication using FastAPI infrastructure and SQLAlchemy ORM to manage PostgreSQL database with Pydantic data validation module</a></h3>
                             <span style="color: white;">FastAPI, PostgreSQl, SQLAlchemy, Alembic, Redis, Docker</span>
                         </div>
                     </div>
@@ -409,8 +409,29 @@
             </div>
         </div>
     </section>
-
-
+    
+    <script>
+    // Получаем все карточки проектов
+    const projects = document.querySelectorAll('.project');
+    
+    // Добавляем событие клика на каждую карточку
+    projects.forEach(function(project) {
+      project.addEventListener('click', function() {
+        // Переключаем класс "visible", который делает текст и оверлей видимыми
+        this.classList.toggle('visible');
+      });
+    
+      // Добавляем событие наведения мыши
+      project.addEventListener('mouseenter', function() {
+        this.classList.add('visible');
+      });
+    
+      // Добавляем событие ухода мыши
+      project.addEventListener('mouseleave', function() {
+        this.classList.remove('visible');
+      });
+    });
+    </script>
 
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
