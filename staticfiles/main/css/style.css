@@ -9839,6 +9839,18 @@ textarea.form-control {
   .project {
     height: 400px;
   }
+
+  .project-1 {
+    background-position: 90% center; /* Смещение изображения вправо */
+  }
+
+  .project-2 {
+    background-position: 30% center; /* Смещение изображения вправо */
+  }
+
+  .project-3 {
+    background-position: 5% center; /* Смещение изображения вправо */
+  }
 }
 
 /* Мобильные устройства (меньше 576px шириной) */
@@ -9857,6 +9869,18 @@ textarea.form-control {
 
   .project span {
     font-size: 12px;
+  }
+
+  .project-1 {
+    background-position: 90% center; /* Смещение изображения вправо */
+  }
+
+  .project-2 {
+    background-position: 30% center; /* Смещение изображения вправо */
+  }
+
+  .project-3 {
+    background-position: 5% center; /* Смещение изображения вправо */
   }
 }
 
