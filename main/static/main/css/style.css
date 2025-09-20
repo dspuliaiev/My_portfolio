@@ -13772,6 +13772,18 @@ textarea.form-control {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
+    /* Картинка проекта всегда видна */
+    .project-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s ease;
+    }
+
     /* Изначально оверлей и текст скрыты */
     .project-card .overlay, .project-card .project-content {
         opacity: 0;
@@ -13793,6 +13805,7 @@ textarea.form-control {
         width: 100%;
         height: 100%;
         background-color: rgba(62, 100, 255, 0.95); /* Синий оверлей */
+        z-index: 1;
     }
 
     /* Текст внутри проекта - белый */
