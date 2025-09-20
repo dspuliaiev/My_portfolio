@@ -13861,6 +13861,7 @@ textarea.form-control {
         display: flex;
         justify-content: center;
         gap: 15px;
+        margin-bottom: 15px;
     }
 
     .project-links a {
@@ -13870,6 +13871,7 @@ textarea.form-control {
         align-items: center;
         transition: all 0.3s ease;
         text-decoration: none;
+        white-space: nowrap;
     }
 
     .project-links a:hover {
@@ -13922,8 +13924,15 @@ textarea.form-control {
         }
 
         .project-links {
-            flex-direction: column;
+            flex-direction: row; /* Всегда горизонтально */
             gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-links a {
+            font-size: 13px;
+            padding: 5px 8px;
         }
 
         .project-1 .project-img {
@@ -13947,10 +13956,21 @@ textarea.form-control {
 
         .project-content {
             padding: 10px;
+            width: 95%;
         }
 
         .project-content h3 {
             font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .project-content p {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .tech-stack {
+            margin-bottom: 10px;
         }
 
         .tech-stack span {
@@ -13959,7 +13979,22 @@ textarea.form-control {
         }
 
         .project-links {
-            flex-direction: column;
+            flex-direction: row; /* Горизонтальное расположение */
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project-links a {
+            font-size: 12px;
+            padding: 4px 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        .warning {
+            font-size: 11px;
+            padding: 6px 10px;
+            margin-top: 8px;
         }
 
         .project-1 .project-img {
@@ -13972,6 +14007,24 @@ textarea.form-control {
 
         .project-3 .project-img {
             background-position: 5% center;
+        }
+    }
+
+    /* Очень маленькие мобильные устройства */
+    @media (max-width: 380px) {
+        .project-links {
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        .project-links a {
+            font-size: 11px;
+            padding: 3px 5px;
+        }
+
+        .tech-stack span {
+            font-size: 9px;
+            padding: 2px 6px;
         }
     }
 
