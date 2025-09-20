@@ -13550,262 +13550,290 @@ textarea.form-control {
     color: #6c757d;
 }
 
-/* Общие стили для секции Projects */
-.ftco-section.ftco-project {
-    padding: 80px 0;
-}
+/*!* Общие стили для секции Projects *!*/
+/*.ftco-section.ftco-project {*/
+/*    padding: 80px 0;*/
+/*}*/
 
-.ftco-section.ftco-project .heading-section {
-    margin-bottom: 50px;
-}
+/*.ftco-section.ftco-project .heading-section {*/
+/*    margin-bottom: 50px;*/
+/*}*/
 
-.ftco-section.ftco-project .heading-section h1 {
-    font-size: 48px;
-    font-weight: bold;
-}
+/*.ftco-section.ftco-project .heading-section h1 {*/
+/*    font-size: 48px;*/
+/*    font-weight: bold;*/
+/*}*/
 
-.ftco-section.ftco-project .heading-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+/*.ftco-section.ftco-project .heading-section h2 {*/
+/*    font-size: 36px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
-.ftco-section.ftco-project .heading-section p {
-    font-size: 18px;
-    color: #6c757d;
-}
+/*.ftco-section.ftco-project .heading-section p {*/
+/*    font-size: 18px;*/
+/*    color: #6c757d;*/
+/*}*/
 
-/* Общие стили для секции Projects */
-.ftco-section.ftco-project {
-    padding: 80px 0;
-}
+/*!* Общие стили для секции Projects *!*/
+/*.ftco-section.ftco-project {*/
+/*    padding: 80px 0;*/
+/*}*/
 
-.ftco-section.ftco-project .heading-section {
-    margin-bottom: 50px;
-}
+/*.ftco-section.ftco-project .heading-section {*/
+/*    margin-bottom: 50px;*/
+/*}*/
 
-.ftco-section.ftco-project .heading-section h1 {
-    font-size: 48px;
-    font-weight: bold;
-}
+/*.ftco-section.ftco-project .heading-section h1 {*/
+/*    font-size: 48px;*/
+/*    font-weight: bold;*/
+/*}*/
 
-.ftco-section.ftco-project .heading-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+/*.ftco-section.ftco-project .heading-section h2 {*/
+/*    font-size: 36px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
-.ftco-section.ftco-project .heading-section p {
-    font-size: 18px;
-    color: #6c757d;
-}
+/*.ftco-section.ftco-project .heading-section p {*/
+/*    font-size: 18px;*/
+/*    color: #6c757d;*/
+/*}*/
 
-/* Стили для карточки проекта */
-.project {
-    position: relative;
-    height: 800px; /* Базовая высота карточки */
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-size: cover;
-    background-position: center;
-}
+/*!* Стили для карточки проекта *!*/
+/*.project {*/
+/*    position: relative;*/
+/*    height: 800px; !* Базовая высота карточки *!*/
+/*    width: 100%;*/
+/*    margin: 0 auto;*/
+/*    overflow: hidden;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
 
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+/*.project:hover {*/
+/*    transform: scale(1.05);*/
+/*    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);*/
+/*}*/
 
-/* Изначально оверлей и текст скрыты */
-.project .overlay, .project .text {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none; /* Отключаем возможность взаимодействия, пока не видно */
-}
+/*!* Изначально оверлей и текст скрыты *!*/
+/*.project .overlay, .project .text {*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.3s ease;*/
+/*    pointer-events: none; !* Отключаем возможность взаимодействия, пока не видно *!*/
+/*}*/
 
-/* При наведении или клике оверлей и текст становятся видимыми */
-.project:hover .overlay, .project:hover .text, .project.visible .overlay, .project.visible .text {
-    opacity: 1;
-    pointer-events: auto; /* Включаем возможность взаимодействия */
-}
+/*!* При наведении или клике оверлей и текст становятся видимыми *!*/
+/*.project:hover .overlay, .project:hover .text, .project.visible .overlay, .project.visible .text {*/
+/*    opacity: 1;*/
+/*    pointer-events: auto; !* Включаем возможность взаимодействия *!*/
+/*}*/
 
-/* Оверлей */
-.project .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(62, 100, 255, 1); /* Полностью непрозрачный оверлей */
-}
+/*!* Оверлей *!*/
+/*.project .overlay {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: rgba(62, 100, 255, 1); !* Полностью непрозрачный оверлей *!*/
+/*}*/
 
-/* Текст внутри проекта */
-.project .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    width: 80%;
-}
+/*!* Текст внутри проекта *!*/
+/*.project .text {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*    width: 80%;*/
+/*}*/
 
-.project h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
+/*.project h3 {*/
+/*    font-size: 22px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
 
-.project h3 a {
-    color: white;
-    text-decoration: none;
-}
+/*.project h3 a {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
 
-.project h3 a:hover {
-    text-decoration: underline;
-}
+/*.project h3 a:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
 
-.project span {
-    font-size: 15px;
-    color: #f8f9fa;
-}
+/*.project span {*/
+/*    font-size: 15px;*/
+/*    color: #f8f9fa;*/
+/*}*/
 
-/* Медиазапросы для адаптивности */
+/*!* Медиазапросы для адаптивности *!*/
 
-/* Средние экраны (планшеты, небольшие ноутбуки) */
-@media (max-width: 1200px) {
-    .project {
-        height: 500px;
-    }
-}
+/*!* Средние экраны (планшеты, небольшие ноутбуки) *!*/
+/*@media (max-width: 1200px) {*/
+/*    .project {*/
+/*        height: 500px;*/
+/*    }*/
+/*}*/
 
-/* Планшеты и устройства с маленькими экранами */
-@media (max-width: 768px) {
-    .project {
-        height: 400px;
-    }
+/*!* Планшеты и устройства с маленькими экранами *!*/
+/*@media (max-width: 768px) {*/
+/*    .project {*/
+/*        height: 400px;*/
+/*    }*/
 
-    .project-1 {
-        background-position: 90% center; /* Смещение изображения вправо */
-    }
+/*    .project-1 {*/
+/*        background-position: 90% center; !* Смещение изображения вправо *!*/
+/*    }*/
 
-    .project-2 {
-        background-position: 30% center; /* Смещение изображения вправо */
-    }
+/*    .project-2 {*/
+/*        background-position: 30% center; !* Смещение изображения вправо *!*/
+/*    }*/
 
-    .project-3 {
-        background-position: 5% center; /* Смещение изображения вправо */
-    }
-}
+/*    .project-3 {*/
+/*        background-position: 5% center; !* Смещение изображения вправо *!*/
+/*    }*/
+/*}*/
 
-/* Мобильные устройства (меньше 576px шириной) */
-@media (max-width: 576px) {
-    .project {
-        height: 300px;
-    }
+/*!* Мобильные устройства (меньше 576px шириной) *!*/
+/*@media (max-width: 576px) {*/
+/*    .project {*/
+/*        height: 300px;*/
+/*    }*/
 
-    .project .text {
-        font-size: 14px;
-    }
+/*    .project .text {*/
+/*        font-size: 14px;*/
+/*    }*/
 
-    .project h3 {
-        font-size: 18px;
-    }
+/*    .project h3 {*/
+/*        font-size: 18px;*/
+/*    }*/
 
-    .project span {
-        font-size: 12px;
-    }
+/*    .project span {*/
+/*        font-size: 12px;*/
+/*    }*/
 
-    .project-1 {
-        background-position: 90% center; /* Смещение изображения вправо */
-    }
+/*    .project-1 {*/
+/*        background-position: 90% center; !* Смещение изображения вправо *!*/
+/*    }*/
 
-    .project-2 {
-        background-position: 30% center; /* Смещение изображения вправо */
-    }
+/*    .project-2 {*/
+/*        background-position: 30% center; !* Смещение изображения вправо *!*/
+/*    }*/
 
-    .project-3 {
-        background-position: 5% center; /* Смещение изображения вправо */
-    }
-}
+/*    .project-3 {*/
+/*        background-position: 5% center; !* Смещение изображения вправо *!*/
+/*    }*/
+/*}*/
 
 /* Projects Section Styles */
+    .ftco-section.ftco-project {
+        padding: 80px 0;
+    }
+
+    .ftco-section.ftco-project .heading-section {
+        margin-bottom: 50px;
+    }
+
+    .ftco-section.ftco-project .heading-section h1 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .ftco-section.ftco-project .heading-section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .ftco-section.ftco-project .heading-section p {
+        font-size: 18px;
+        color: #6c757d;
+    }
+
+    /* Стили для карточки проекта */
     .project-card {
-        margin-bottom: 30px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        height: 300px;
         position: relative;
+        height: 300px;
+        width: 100%;
+        margin: 0 auto 30px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-size: cover;
+        background-position: center;
     }
 
     .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    }
-
-    .project-img {
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        transition: all 0.5s ease;
-    }
-
-    .project-card:hover .project-img {
         transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .overlay {
+    /* Изначально оверлей и текст скрыты */
+    .project-card .overlay, .project-card .project-content {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+    }
+
+    /* При наведении оверлей и текст становятся видимыми */
+    .project-card:hover .overlay, .project-card:hover .project-content {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Оверлей - синий цвет */
+    .project-card .overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.3) 100%);
-        opacity: 0;
-        transition: all 0.4s ease;
+        background-color: rgba(62, 100, 255, 0.95); /* Синий оверлей */
     }
 
-    .project-card:hover .overlay {
-        opacity: 1;
-    }
-
+    /* Текст внутри проекта - белый */
     .project-content {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px;
-        color: #fff;
-        transform: translateY(20px);
-        opacity: 0;
-        transition: all 0.4s ease;
-    }
-
-    .project-card:hover .project-content {
-        transform: translateY(0);
-        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 80%;
+        z-index: 2;
     }
 
     .project-content h3 {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 10px;
-        font-weight: 600;
+        color: white;
+    }
+
+    .project-content h3 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .project-content h3 a:hover {
+        text-decoration: underline;
     }
 
     .project-content p {
-        font-size: 14px;
+        font-size: 15px;
+        color: #f8f9fa;
         margin-bottom: 15px;
-        opacity: 0.9;
     }
 
     .tech-stack {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin-bottom: 15px;
+        gap: 5px;
     }
 
     .tech-stack span {
@@ -13813,30 +13841,27 @@ textarea.form-control {
         padding: 4px 10px;
         border-radius: 20px;
         font-size: 12px;
-        margin-right: 5px;
-        margin-bottom: 5px;
+        color: white;
     }
 
     .project-links {
         display: flex;
-        margin-bottom: 15px;
+        justify-content: center;
+        gap: 15px;
     }
 
     .project-links a {
-        color: #fff;
+        color: white;
         font-size: 14px;
         display: flex;
         align-items: center;
         transition: all 0.3s ease;
-        margin-right: 15px;
-    }
-
-    .project-links a:last-child {
-        margin-right: 0;
+        text-decoration: none;
     }
 
     .project-links a:hover {
-        color: #ff6b6b;
+        color: #ffd700;
+        text-decoration: underline;
     }
 
     .project-links i {
@@ -13850,13 +13875,16 @@ textarea.form-control {
     }
 
     .warning {
-        background: rgba(255, 193, 7, 0.2);
+        background: rgba(255, 255, 255, 0.2);
         border-left: 4px solid #ffc107;
         padding: 8px 12px;
         margin-top: 10px;
         font-size: 12px;
         border-radius: 4px;
+        color: white;
     }
+
+    /* Медиазапросы для адаптивности */
 
     /* Средние экраны (планшеты, небольшие ноутбуки) */
     @media (max-width: 1200px) {
@@ -13873,6 +13901,7 @@ textarea.form-control {
 
         .project-content {
             padding: 15px;
+            width: 90%;
         }
 
         .project-content h3 {
@@ -13881,15 +13910,19 @@ textarea.form-control {
 
         .project-links {
             flex-direction: column;
+            gap: 10px;
         }
 
-        .project-links a {
-            margin-right: 0;
-            margin-bottom: 10px;
+        .project-1 .project-img {
+            background-position: 90% center;
         }
 
-        .project-links a:last-child {
-            margin-bottom: 0;
+        .project-2 .project-img {
+            background-position: 30% center;
+        }
+
+        .project-3 .project-img {
+            background-position: 5% center;
         }
     }
 
@@ -13914,6 +13947,18 @@ textarea.form-control {
 
         .project-links {
             flex-direction: column;
+        }
+
+        .project-1 .project-img {
+            background-position: 90% center;
+        }
+
+        .project-2 .project-img {
+            background-position: 30% center;
+        }
+
+        .project-3 .project-img {
+            background-position: 5% center;
         }
     }
 
