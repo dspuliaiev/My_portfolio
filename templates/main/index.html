@@ -71,17 +71,7 @@
                 {#    			<div class="col-sm ftco-animate">#}
                 {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-1.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
                 {#    			</div>#}
-                {#    			<div class="col-sm ftco-animate">#}
-                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-2.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
-                {#    			</div>#}
-                {#    			<div class="col-sm ftco-animate">#}
-                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-3.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
-                {#    			</div>#}
-                {#    			<div class="col-sm ftco-animate">#}
-                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-4.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
-                {#    			</div>#}
-                {#    			<div class="col-sm ftco-animate">#}
-                {#    				<a href="#" class="partner"><img src= '{% static "main/images/partner-5.png" %}'  class="img-fluid" alt="Colorlib Template"></a>#}
+
             </div>
         </div>
 
@@ -241,55 +231,90 @@
 
 
     <!-- Projects -->
+    <!-- Projects Section -->
     <section class="ftco-section ftco-project" id="projects-section">
-        <div class="container-fluid px-md-0">
-            <div class="row no-gutters justify-content-center pb-5">
-                <div class="col-md-11 heading-section text-center ftco-animate">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Projects</h1>
-                    <h2 class="mb-4">Projects</h2>
-                    <p>In my projects, I leverage a diverse tech stack to deliver robust and scalable solutions.
-                        My expertise spans from backend development with Python, Django,
-                        and FastAPI to machine learning with TensorFlow and Scikit-learn.</p>
+                    <h2 class="mb-4">My Projects</h2>
+                    <p>Here are some of my recent projects that showcase my skills in web development, machine learning,
+                        and backend development.</p>
                 </div>
             </div>
-            <div class="row no-gutters justify-content-center">
-                <!-- Первая карточка проекта -->
-                <div class="col-md-11 mb-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow project-3"
-                         style="background-image: url('{% static 'main/images/work-1.png' %}');">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="https://classifyme.onrender.com/">A web app designed to classify images using a
-                                developed CNN</a></h3>
-                            <span>Bootstrap, Django, NumPy, Pandas, Scikit-learn, Docker</span>
-                            <div class="warning">Warning: The service may take longer to start up as it is currently in
-                                a sleeping state on Render.
+
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-card">
+                        <div class="project-img"
+                             style="background-image: url('{% static 'main/images/work-1.png' %}');">
+                            <div class="overlay"></div>
+                            <div class="project-content">
+                                <h3>Image Classification App</h3>
+                                <p>A web app designed to classify images using a developed CNN</p>
+                                <div class="tech-stack">
+                                    <span>Bootstrap</span>
+                                    <span>Django</span>
+                                    <span>TensorFlow</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://classifyme.onrender.com/" target="_blank"><i class="icon-eye"></i>
+                                        View Live</a>
+                                    <a href="#"><i class="icon-github"></i> GitHub</a>
+                                </div>
+                                <div class="warning">Warning: The service may take longer to start up as it is currently
+                                    in a sleeping state on Render.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Вторая карточка проекта -->
-                <div class="col-md-11 mb-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow"
-                         style="background-image: url('{% static 'main/images/work-2.png' %}');">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="https://personal-assistant.koyeb.app/">A web app with authentication for
-                                managing contacts, notes, processing files, retrieving weather and news</a></h3>
-                            <span>Bootstrap, Django, PostgreSQl, BeautifulSoup, Docker, Cloudinary</span>
+
+                <!-- Project 2 -->
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-card">
+                        <div class="project-img"
+                             style="background-image: url('{% static 'main/images/work-2.png' %}');">
+                            <div class="overlay"></div>
+                            <div class="project-content">
+                                <h3>Personal Assistant</h3>
+                                <p>A web app for managing contacts, notes, and processing files</p>
+                                <div class="tech-stack">
+                                    <span>Django</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://personal-assistant.koyeb.app/" target="_blank"><i
+                                            class="icon-eye"></i> View Live</a>
+                                    <a href="#"><i class="icon-github"></i> GitHub</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Третья карточка проекта -->
-                <div class="col-md-11 mb-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center shadow project-2"
-                         style="background-image: url('{% static 'main/images/work-3.png' %}'); background-color: blue;">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="https://fastapi-rest.koyeb.app/docs" style="color: white;">API with
-                                authentication using FastAPI infrastructure and SQLAlchemy ORM to manage PostgreSQL
-                                database with Pydantic data validation module</a></h3>
-                            <span style="color: white;">FastAPI, PostgreSQl, SQLAlchemy, Alembic, Redis, Docker</span>
+
+                <!-- Project 3 -->
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-card">
+                        <div class="project-img"
+                             style="background-image: url('{% static 'main/images/work-3.png' %}');">
+                            <div class="overlay"></div>
+                            <div class="project-content">
+                                <h3>FastAPI REST Service</h3>
+                                <p>API with authentication using FastAPI infrastructure</p>
+                                <div class="tech-stack">
+                                    <span>FastAPI</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Redis</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://fastapi-rest.koyeb.app/docs" target="_blank"><i
+                                            class="icon-eye"></i> View Live</a>
+                                    <a href="#"><i class="icon-github"></i> GitHub</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
