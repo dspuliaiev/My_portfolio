@@ -14027,94 +14027,94 @@ textarea.form-control {
             padding: 2px 6px;
         }
     }
-            /* Увеличенная контактная секция */
-    .enlarged-contact-section {
-        padding: 6em 0 !important; /* Увеличили с 3em до 6em */
-    }
+           /* Уменьшенная контактная секция */
+.enlarged-contact-section {
+    padding: 3em 0 !important; /* Вернули к нормальному размеру */
+}
 
-    .enlarged-contact-section .heading-section {
-        margin-bottom: 4rem !important; /* Увеличили с 2rem до 4rem */
+.enlarged-contact-section .heading-section {
+    margin-bottom: 2rem !important; /* Вернули к нормальному размеру */
+}
+
+.enlarged-contact-section .heading-section h2 {
+    font-size: 1.8rem !important; /* Вернули к нормальному размеру */
+    margin-bottom: 1rem !important; /* Вернули к нормальному размеру */
+}
+
+.enlarged-contact-section .heading-section p {
+    font-size: 0.9rem !important; /* Вернули к нормальному размеру */
+    margin-bottom: 2rem !important; /* Вернули к нормальному размеру */
+}
+
+/* Уменьшенные контактные ссылки */
+.enlarged-contact-links {
+    margin-bottom: 2rem !important; /* Вернули к нормальному размеру */
+}
+
+.contact-link.enlarged {
+    display: block;
+    padding: 0.8rem 1rem !important; /* Вернули к нормальному размеру */
+    color: #495057 !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 8px; /* Вернули к нормальному размеру */
+    text-align: center;
+    margin-bottom: 0.5rem; /* Вернули к нормальному размеру */
+}
+
+.contact-link.enlarged:hover {
+    color: #007bff !important;
+    background-color: #f8f9fa;
+    transform: translateY(-2px); /* Вернули к нормальному размеру */
+    text-decoration: none;
+}
+
+.contact-link.enlarged .icon {
+    font-size: 1.5rem !important; /* Вернули к нормальному размеру */
+    margin-bottom: 0.5rem !important; /* Вернули к нормальному размеру */
+    display: block;
+}
+
+.contact-link.enlarged small {
+    font-weight: 600;
+    font-size: 0.875rem !important; /* Вернули к нормальному размеру */
+}
+
+/* Уменьшение формы */
+.enlarged-contact-section .contact-form {
+    padding: 1.5rem !important; /* Вернули к нормальному размеру */
+}
+
+.enlarged-contact-section .form-control {
+    height: 45px !important; /* Вернули к нормальному размеру */
+    font-size: 14px !important; /* Вернули к нормальному размеру */
+}
+
+.enlarged-contact-section .btn {
+    padding: 0.6rem 2rem !important; /* Вернули к нормальному размеру */
+    font-size: 14px !important; /* Вернули к нормальному размеру */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .enlarged-contact-section {
+        padding: 2em 0 !important; /* Вернули к нормальному размеру */
     }
 
     .enlarged-contact-section .heading-section h2 {
-        font-size: 3.6rem !important; /* Увеличили с 1.8rem до 3.6rem */
-        margin-bottom: 2rem !important; /* Увеличили с 1rem до 2rem */
-    }
-
-    .enlarged-contact-section .heading-section p {
-        font-size: 1.8rem !important; /* Увеличили с 0.9rem до 1.8rem */
-        margin-bottom: 4rem !important; /* Увеличили с 2rem до 4rem */
-    }
-
-    /* Увеличенные контактные ссылки */
-    .enlarged-contact-links {
-        margin-bottom: 4rem !important; /* Увеличили с 2rem до 4rem */
+        font-size: 1.5rem !important; /* Вернули к нормальному размеру */
     }
 
     .contact-link.enlarged {
-        display: block;
-        padding: 1.6rem 2rem !important; /* Увеличили в 2 раза */
-        color: #495057 !important;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        border-radius: 16px; /* Увеличили с 8px до 16px */
-        text-align: center;
-        margin-bottom: 1rem; /* Увеличили с 0.5rem до 1rem */
-    }
-
-    .contact-link.enlarged:hover {
-        color: #007bff !important;
-        background-color: #f8f9fa;
-        transform: translateY(-4px); /* Увеличили эффект */
-        text-decoration: none;
+        padding: 0.6rem 0.5rem !important; /* Вернули к нормальному размеру */
     }
 
     .contact-link.enlarged .icon {
-        font-size: 3rem !important; /* Увеличили с 1.5rem до 3rem */
-        margin-bottom: 1rem !important; /* Увеличили с 0.5rem до 1rem */
-        display: block;
+        font-size: 1.3rem !important; /* Вернули к нормальному размеру */
     }
 
     .contact-link.enlarged small {
-        font-weight: 600;
-        font-size: 1.75rem !important; /* Увеличили с 0.875rem до 1.75rem */
+        font-size: 0.75rem !important; /* Вернули к нормальному размеру */
     }
-
-    /* Увеличение формы (если нужно) */
-    .enlarged-contact-section .contact-form {
-        padding: 3rem !important; /* Увеличили с 1.5rem до 3rem */
-    }
-
-    .enlarged-contact-section .form-control {
-        height: 90px !important; /* Увеличили с 45px до 90px */
-        font-size: 28px !important; /* Увеличили с 14px до 28px */
-    }
-
-    .enlarged-contact-section .btn {
-        padding: 1.2rem 4rem !important; /* Увеличили в 2 раза */
-        font-size: 28px !important; /* Увеличили с 14px до 28px */
-    }
-
-    /* Адаптивность */
-    @media (max-width: 768px) {
-        .enlarged-contact-section {
-            padding: 4em 0 !important; /* Увеличили с 2em до 4em */
-        }
-
-        .enlarged-contact-section .heading-section h2 {
-            font-size: 3rem !important; /* Увеличили с 1.5rem до 3rem */
-        }
-
-        .contact-link.enlarged {
-            padding: 1.2rem 1rem !important; /* Увеличили */
-        }
-
-        .contact-link.enlarged .icon {
-            font-size: 2.6rem !important; /* Увеличили с 1.3rem до 2.6rem */
-        }
-
-        .contact-link.enlarged small {
-            font-size: 1.5rem !important; /* Увеличили для мобильных */
-        }
-    }
+}
 
