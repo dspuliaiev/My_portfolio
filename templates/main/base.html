@@ -2,89 +2,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <title>AboutMe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
-      <!-- Favicon -->
+
+    <!-- Favicon -->
     <link href="{% static 'main/images/favicon.png' %}" rel="icon">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href='{% static "main/css/open-iconic-bootstrap.min.css" %}'>
-    <link rel="stylesheet" href= '{% static  "main/css/animate.css" %}'>
-    
-    <link rel="stylesheet" href= '{% static "main/css/owl.carousel.min.css" %}' >
-    <link rel="stylesheet" href='{% static "main/css/owl.theme.default.min.css" %}' >
-    <link rel="stylesheet" href='{% static  "main/css/magnific-popup.css" %}' >
+    <link rel="stylesheet" href='{% static  "main/css/animate.css" %}'>
 
-    <link rel="stylesheet" href='{% static "main/css/aos.css" %}' >
+    <link rel="stylesheet" href='{% static "main/css/owl.carousel.min.css" %}'>
+    <link rel="stylesheet" href='{% static "main/css/owl.theme.default.min.css" %}'>
+    <link rel="stylesheet" href='{% static  "main/css/magnific-popup.css" %}'>
 
-    <link rel="stylesheet" href='{% static "main/css/ionicons.min.css" %}' >
-    
-    <link rel="stylesheet" href='{% static "main/css/flaticon.css" %}' >
-    <link rel="stylesheet" href='{% static "main/css/icomoon.css" %}' >
-    <link rel="stylesheet" href='{% static "main/css/style.css" %}' >
-  </head>
+    <link rel="stylesheet" href='{% static "main/css/aos.css" %}'>
+
+    <link rel="stylesheet" href='{% static "main/css/ionicons.min.css" %}'>
+
+    <link rel="stylesheet" href='{% static "main/css/flaticon.css" %}'>
+    <link rel="stylesheet" href='{% static "main/css/icomoon.css" %}'>
+    <link rel="stylesheet" href='{% static "main/css/style.css" %}'>
+</head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="{% url 'index' %}"><span>D</span>enys</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>	          
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>	          
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    
-    {% block content %}
-    {% endblock %}
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}"><span>D</span>enys</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock %}
 
 <footer class="ftco-footer ftco-section">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-6">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">About</h2>
-          <p>Passionate Python Developer with expertise in Django, FastAPI, and Machine Learning. Always open to new challenges and collaborations</p>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">About</h2>
+                    <p>Passionate Python Developer with expertise in Django, FastAPI, and Machine Learning. Always open
+                        to new challenges and collaborations</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                    <h2 class="ftco-heading-2">Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'index' %}"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                        <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                        <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a>
+                        </li>
+                        <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="ftco-footer-widget mb-4 ml-md-4">
-          <h2 class="ftco-heading-2">Links</h2>
-          <ul class="list-unstyled">
-            <li><a href="{% url 'index' %}"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-            <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>               
-            <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-            <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-          </ul>
-        </div>
-      </div>           
     </div>
-  </div>
-</footer>         
+</footer>
 
 <p class="text-center" style="font-size: 0.5em;">
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <br>
-  Redesigned and extended with no less love by Denys Puliaiev
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+    All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+        href="https://colorlib.com" target="_blank">Colorlib</a>
+    <br>
+    Redesigned and extended with no less love by Denys Puliaiev
 </p>
 
 <!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"/>
+    </svg>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src='{% static "main/js/jquery-migrate-3.0.1.min.js" %}'></script>
@@ -97,7 +108,7 @@
 <script src='{% static "main/js/jquery.magnific-popup.min.js" %}'></script>
 <script src='{% static "main/js/aos.js" %}'></script>
 <script src='{% static "main/js/jquery.animateNumber.min.js" %}'></script>
-<script src='{% static "main/js/scrollax.min.js" %}'></script>  
+<script src='{% static "main/js/scrollax.min.js" %}'></script>
 <script src='{% static "main/js/main.js" %}'></script>
 
 </body>
